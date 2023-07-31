@@ -1,1 +1,160 @@
 @import '~bootstrap/scss/bootstrap';
+@import '../scss/partials/variables';
+
+.jumbotron {
+    height: 400px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    position: relative;
+
+    button {
+        background-color: $color-primary;
+        color: white;
+        border: none;
+        padding: 20px 50px;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+        left: 10%;
+        top: calc(100% - 35px);
+    }
+}
+
+.card-content {
+    img {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+}
+
+button {
+    background-color: $color-primary;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    margin: 10px auto;
+}
+
+.background {
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+footer {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+
+    .acquisti {
+        display: flex;
+        margin: 0 auto;
+        padding: 50px 50px;
+        background-color: $color-primary;
+        align-items: center;
+        justify-content: space-around;
+
+        div {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+
+            img {
+                width: 40px;
+            }
+
+            span {
+                color: white;
+                text-transform: uppercase;
+                margin-left: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+
+        .link-utili {
+            min-height: calc(100% + 100px);
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            ul {
+                color: white;
+                list-style: none;
+                margin: 10px 0;
+
+                h3 {
+                    margin: 5px 0;
+                    text-transform: uppercase;
+                }
+
+                li {
+                    font-size: 12px;
+                    color: grey;
+                    margin: 3px 0;
+                }
+            }
+
+            div {
+                margin: 0 20px;
+            }
+        }
+
+        img {
+            position: absolute;
+            right: 50px;
+            top: -30px;
+            height: 130%;
+        }
+    }
+
+    .social {
+        background-color: rgb(48, 48, 48);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -100px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        button {
+            border: 1px solid $color-primary;
+            padding: 10px;
+            background-color: rgb(48, 48, 48);
+            color: white;
+            text-transform: uppercase;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 0 10px;
+            }
+
+            span {
+                margin-right: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $color-primary;
+            }
+        }
+
+    }
+}

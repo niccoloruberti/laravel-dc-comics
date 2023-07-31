@@ -12,7 +12,7 @@
                                 <a class="nav-link text-uppercase" href="#">characters</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="/">comics</a>
+                                <a class="nav-link text-uppercase  {{ Route::currentRouteName () === 'comics' ? 'fw-bold active' : '' }}" href="/">comics</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase" href="#">movies</a>
