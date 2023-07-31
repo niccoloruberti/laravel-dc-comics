@@ -8,7 +8,8 @@
             </div>
         </div>
         <div>
-            <form action="" method="POST" class="w-50">
+            <form action="{{ route('comics.store') }}" method="POST" class="w-50">
+            @csrf
                 {{-- titolo --}}
                 <div class="form-group py-3">
                     <label class="control-label">Titolo</label>
@@ -47,7 +48,7 @@
                 {{-- sale_date --}}
                 <div class="form-group py-3">
                     <label class="control-label">Data di uscita</label>
-                    <input type="text" id="sale_date" name="sale-date" class="form-control" placeholder="Inserisci la data di uscita">
+                    <input type="text" id="sale_date" name="sale_date" class="form-control" placeholder="Inserisci la data di uscita">
                 </div>
                 {{-- type --}}
                 <div class="form-group py-3">
@@ -63,6 +64,10 @@
                 <div class="form-group py-3">
                     <label class="control-label">Scrittori</label>
                     <input type="text" id="writers" name="writers" class="form-control" placeholder="Inserisci gli scrittori">
+                </div>
+                {{-- submit --}}
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit">Aggiungi</button>
                 </div>
             </form>
         </div>
