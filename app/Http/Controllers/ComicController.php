@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Comics;
+use App\Models\Comic;
 use Illuminate\Http\Request;
 
-class ComicsController extends Controller
+class ComicController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ComicsController extends Controller
      */
     public function index()
     {
-        return view('comics.idex');
+        //
     }
 
     /**
@@ -41,10 +41,10 @@ class ComicsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Comics  $comics
+     * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function show(Comics $comics)
+    public function show(Comic $comic)
     {
         //
     }
@@ -52,10 +52,10 @@ class ComicsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Comics  $comics
+     * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comics $comics)
+    public function edit(Comic $comic)
     {
         //
     }
@@ -64,10 +64,10 @@ class ComicsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Comics  $comics
+     * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comics $comics)
+    public function update(Request $request, Comic $comic)
     {
         //
     }
@@ -75,10 +75,10 @@ class ComicsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Comics  $comics
+     * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comics $comics)
+    public function destroy(Comic $comic)
     {
         //
     }

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ComicController as ComicController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('index', ComicsController::class);
+Route::get('/', function() {
+    return view('comics.index');
+});
+
+Route::resource('comics', ComicController::class);
