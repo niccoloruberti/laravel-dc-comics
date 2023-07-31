@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+{{-- jumbotron --}}
+<div class="jumbotron">
+    <a href="{{ route('comics.create')}}"><button>AGGIUNGI</button></a>
+</div>
+{{-- contenuto --}}
 <div class="bg-dark py-5">
     <div class="container">
         <div class="row">
