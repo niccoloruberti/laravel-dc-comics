@@ -9,6 +9,10 @@
                     <a href="{{ route('comics.edit', $comic->id)}}">
                         <button class="btn btn-warning">modifica</button>
                     </a>
+                    <form class="d-inline-block" action="{{ route('comics.destroy', $comic->id)}}" method="POST">
+                        @csrf @method('DELETE')
+                        <button type="submit" class="btn btn-danger">elimina</button>
+                    </form>
                     <h2>{{ $comic->title }}</h2>
                     <div class="w-100 d-flex bg-success bg-opacity-75 my-3">
                         <div class="w-75 d-flex justify-content-between border border-secondary p-3">
