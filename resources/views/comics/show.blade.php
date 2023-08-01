@@ -6,6 +6,9 @@
         <div class="row">
             <div class="col-8">
                 <div class="content">
+                    <a href="{{ route('comics.edit', $comic->id)}}">
+                        <button class="btn btn-warning">modifica</button>
+                    </a>
                     <h2>{{ $comic->title }}</h2>
                     <div class="w-100 d-flex bg-success bg-opacity-75 my-3">
                         <div class="w-75 d-flex justify-content-between border border-secondary p-3">
