@@ -4,12 +4,13 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-12">
-                <h2 class="fw-bold">Inserisci una nuova serie</h2>
+                <h2 class="fw-bold">Modifica Fumetto</h2>
             </div>
         </div>
         <div>
             <form action="{{ route('comics.update', $comic->id) }}" method="POST" class="w-50">
-            @csrf @method('PUT')
+            @csrf
+            @method('PUT')
                 {{-- titolo --}}
                 <div class="form-group py-3">
                     <label class="control-label">Titolo</label>
